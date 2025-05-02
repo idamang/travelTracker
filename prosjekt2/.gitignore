@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+!prosjekt2/src/vite-env.d.ts
+!prosjekt2/src/assets/images/image_not_found.jpg
