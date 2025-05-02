@@ -1,7 +1,7 @@
 import ProfileCard from '@/components/ProfileCard';
 import StatusCard from '@/components/StatusCard';
 import { Button } from '@/components/ui/button';
-import { useUser } from '@/context/UseUser';
+import { useUser } from '@/context/useUser';
 import { GET_USER_PROFILE } from '@/service/queries';
 import { useQuery } from '@apollo/client';
 import React from 'react';

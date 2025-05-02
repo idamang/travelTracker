@@ -2,7 +2,7 @@ import CommentThread from '@/components/Comments';
 import ExploreOverview from '@/components/ExploreOverview';
 import OtherTrips from '@/components/OtherTrips';
 import { Button } from '@/components/ui/button';
-import { useUser } from '@/context/UseUser';
+import { useUser } from '@/context/useUser';
 import { GET_COUNTRY_BY_CCA3 } from '@/service/queries';
 import { Country } from '@/service/types';
 import { useQuery } from '@apollo/client';
