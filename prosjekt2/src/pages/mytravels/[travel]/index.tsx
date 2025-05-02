@@ -1,5 +1,5 @@
 import OtherTrips from '@/components/OtherTrips';
-import TripOverview from '@/components/tripOverview';
+import TripOverview from '@/components/TripOverview';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 

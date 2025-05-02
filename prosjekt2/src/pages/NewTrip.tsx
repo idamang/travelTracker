@@ -2,18 +2,18 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { useUser } from '@/context/UseUser';
+import { useUser } from '@/context/useUser';
 import { CREATE_TRAVEL } from '@/service/mutations';
 import {
   GET_COUNTRIES,
   GET_TRAVELS_FROM_CURRENT_USER,
 } from '@/service/queries';
+import { Country } from '@/service/types';
 import { ApolloError, useLazyQuery, useMutation } from '@apollo/client';
 import { isAfter } from 'date-fns';
 import { Calendar, Save } from 'lucide-react';
 import { ChangeEvent, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Country } from '@/service/types';
 
 export default function NewTrip() {
   const { user } = useUser();

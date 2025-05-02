@@ -1,4 +1,5 @@
-import { useUser } from '@/context/UseUser';
+
+import { useUser } from '@/context/useUser';
 import { GET_PAST_TRAVELS_FROM_CURRENT_USER } from '@/service/queries';
 import { Travel } from '@/service/types';
 import { useQuery } from '@apollo/client';

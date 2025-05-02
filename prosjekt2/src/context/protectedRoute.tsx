@@ -1,6 +1,6 @@
+import { useUser } from '@/context/useUser';
 import React from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
-import { useUser } from '@/context/UseUser';
 
 const ProtectedRoute: React.FC = () => {
   const { user, loading, setUser } = useUser();

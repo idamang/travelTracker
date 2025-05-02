@@ -2,20 +2,20 @@ import { ApolloProvider } from '@apollo/client';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import client from './ApolloClient';
 import Layout from './components/layout/layout';
-import ProtectedRoute from './context/ProtectedRoute';
+import ProtectedRoute from './context/protectedRoute';
+import { UserProvider } from './context/UserContext';
 import ErrorPage from './pages/Erro';
 import CountryPage from './pages/explore/[country]/index';
-import Explore from './pages/explore/explore';
-import GetStarted from './pages/getStarted';
-import LoginPage from './pages/login';
-import Maps from './pages/maps';
-import TripDetail from './pages/myTravels/[travel]/Index';
-import MyTravels from './pages/myTravels/mytravels';
-import NewTrip from './pages/newTrip';
-import { UserProvider } from './context/UserContext';
-import Profile from './pages/profile';
+import Explore from './pages/explore/Explore';
+import GetStarted from './pages/GetStarted';
+import LoginPage from './pages/Login';
+import Maps from './pages/Maps';
+import TripDetail from './pages/mytravels/[travel]/index';
+import NewTrip from './pages/NewTrip';
+import Profile from './pages/Profile';
 
 // Import ThemeProvider
+import MyTravels from './pages/mytravels/MyTravels';
 import { ThemeProvider } from './ThemeContext';
 
 function App() {
