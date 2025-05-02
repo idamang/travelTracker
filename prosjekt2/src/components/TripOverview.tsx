@@ -1,3 +1,4 @@
+import defaultImg from '@/assets/images/image_not_found.jpg';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -9,7 +10,6 @@ import { isAfter } from 'date-fns';
 import { Calendar, Edit, Save } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import defaultImg from '../assets/images/image_not_found.jpg';
 import { Badge } from './ui/badge';
 
 interface TravelData {

@@ -1,3 +1,5 @@
+import defaultImg from '@/assets/images/image_not_found.jpg';
+import StarRating from '@/components/StarRating';
 import {
   Card,
   CardContent,
@@ -7,8 +9,6 @@ import {
 } from '@/components/ui/card';
 import { Country, User } from '@/service/types';
 import { Star } from 'lucide-react';
-import defaultImg from '../assets/images/image_not_found.jpg';
-import StarRating from '@/components/StarRating';
 
 export default function ExploreOverview({
   country,
