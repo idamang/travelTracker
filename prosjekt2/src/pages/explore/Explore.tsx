@@ -1,12 +1,13 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { useQuery } from '@apollo/client';
-import { useNavigate, useLocation } from 'react-router-dom';
+import defaultImg from '@/assets/images/image_not_found.jpg';
 import Pagination from '@/components/Pagination';
 import SearchBar from '@/components/SearchBar/SearchBar';
 import TravelCard from '@/components/TravelCard';
 import { GET_COUNTRIES } from '@/service/queries';
 import { Country } from '@/service/types';
-import defaultImg from '../../assets/images/image_not_found.jpg';
+import { useQuery } from '@apollo/client';
+import React, { useEffect, useRef, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+;
 
 const MAX_CACHE_SIZE = 5;
 const DEBOUNCE_DELAY = 300;

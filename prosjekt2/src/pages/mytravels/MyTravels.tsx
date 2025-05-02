@@ -1,3 +1,4 @@
+import defaultImg from '@/assets/images/image_not_found.jpg';
 import TripsCard from '@/components/MyTripsCard';
 import Pagination from '@/components/Pagination';
 import Trip from '@/components/TripCard';
@@ -6,7 +7,7 @@ import { Travel } from '@/service/types';
 import { useQuery } from '@apollo/client';
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import defaultImg from '../../assets/images/image_not_found.jpg';
+;
 
 const MyTravels: React.FC = () => {
   const location = useLocation();
